@@ -1,6 +1,6 @@
-import { Crown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import crownImage from "@/assets/crown.png";
+import logoImage from "@/assets/metodo-rei-logo.png";
 
 export const Hero = () => {
   return (
@@ -12,9 +12,8 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div className="space-y-8 animate-fade-in">
-            <div className="flex items-center gap-3 mb-6">
-              <Crown className="w-8 h-8 text-primary" />
-              <h2 className="text-primary font-bold text-xl tracking-wider uppercase">Método REI</h2>
+            <div className="mb-6">
+              <img src={logoImage} alt="Método REI" className="h-16 w-auto" />
             </div>
             
             <h1 className="text-5xl lg:text-7xl font-black leading-tight">

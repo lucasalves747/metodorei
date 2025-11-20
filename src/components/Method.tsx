@@ -1,4 +1,5 @@
 import { Crown, TrendingUp, Brain } from "lucide-react";
+import logoImage from "@/assets/metodo-rei-logo.png";
 
 export const Method = () => {
   const pillars = [
@@ -25,10 +26,9 @@ export const Method = () => {
         <div className="max-w-6xl mx-auto space-y-16">
           {/* Header */}
           <div className="text-center space-y-6">
-            <Crown className="w-16 h-16 text-primary mx-auto" />
-            <h2 className="text-4xl lg:text-6xl font-black">
-              <span className="text-foreground">O QUE É O </span>
-              <span className="text-primary">MÉTODO REI?</span>
+            <img src={logoImage} alt="Método REI" className="h-20 w-auto mx-auto" />
+            <h2 className="text-4xl lg:text-6xl font-black text-foreground">
+              O QUE É O MÉTODO REI?
             </h2>
             <p className="text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
               O Método REI é uma imersão presencial de dois dias, criada para destravar sua mente, 
