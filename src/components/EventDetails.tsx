@@ -24,22 +24,24 @@ export const EventDetails = () => {
               <span className="text-destructive">🚨 ÚLTIMA</span>
               <span className="text-foreground"> CHAMADA</span>
             </h2>
-            
+
             <div className="space-y-3 md:space-y-4 max-w-3xl mx-auto px-4">
               <p className="text-base md:text-xl text-foreground/90 font-semibold">
                 ⚠️ Essa é sua chance real de fazer diferente ainda em 2025.
               </p>
               <p className="text-sm md:text-lg text-foreground/80">
-                As vagas são limitadas e o evento é 100% presencial.<br />
+                As vagas são limitadas e o evento é 100% presencial.
+                <br />
                 Não vai ter replay. Não tem segunda chamada.
               </p>
               <p className="text-base md:text-xl font-bold text-foreground pt-2 md:pt-4">
-                Você pode continuar como está...<br />
+                Você pode continuar como está...
+                <br />
                 <span className="text-primary">Ou dar o passo que muda tudo.</span>
               </p>
             </div>
           </div>
-          
+
           {/* Event Details */}
           <div className="space-y-6 md:space-y-8">
             <div className="text-center">
@@ -48,11 +50,11 @@ export const EventDetails = () => {
                 <span className="text-foreground"> DO EVENTO</span>
               </h3>
             </div>
-            
+
             {/* Location, Date, Time */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {details.map((detail, index) => (
-                <div 
+                <div
                   key={index}
                   className="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card border border-border rounded-xl"
                 >
@@ -66,14 +68,14 @@ export const EventDetails = () => {
                 </div>
               ))}
             </div>
-            
+
             {/* Includes */}
             <div className="p-6 md:p-8 bg-card border border-border rounded-2xl space-y-4 md:space-y-6">
               <div className="flex items-center gap-3">
                 <Gift className="w-6 md:w-8 h-6 md:h-8 text-primary" />
                 <h4 className="text-xl md:text-2xl font-black text-foreground">Inclui:</h4>
               </div>
-              
+
               <div className="space-y-2 md:space-y-3">
                 {includes.map((item, index) => (
                   <div key={index} className="flex items-start gap-2 md:gap-3">
@@ -83,39 +85,39 @@ export const EventDetails = () => {
                 ))}
               </div>
             </div>
-            
+
             {/* Payment & Limits */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               <div className="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card border border-primary/30 rounded-xl">
                 <CreditCard className="w-6 md:w-8 h-6 md:h-8 text-primary flex-shrink-0" />
                 <p className="text-foreground/90 font-semibold text-sm md:text-base">💳 Parcelamento disponível</p>
               </div>
-              
+
               <div className="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card border border-primary/30 rounded-xl">
                 <Users className="w-6 md:w-8 h-6 md:h-8 text-primary flex-shrink-0" />
-                <p className="text-foreground/90 font-semibold text-sm md:text-base">👫 Desconto especial para casais</p>
+                <p className="text-foreground/90 font-semibold text-sm md:text-base">
+                  👫 Desconto especial para casais
+                </p>
               </div>
-              
+
               <div className="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card border border-destructive/30 rounded-xl sm:col-span-2 lg:col-span-1">
                 <Ban className="w-6 md:w-8 h-6 md:h-8 text-destructive flex-shrink-0" />
                 <p className="text-foreground/90 font-semibold text-sm md:text-base">⛔ Vagas limitadas</p>
               </div>
             </div>
           </div>
-          
+
           {/* CTA */}
           <div className="text-center space-y-4 md:space-y-6 pt-6 md:pt-8">
-            <Button 
-              variant="hero" 
+            <Button
+              variant="hero"
               size="lg"
               className="px-8 md:px-16 py-6 md:py-8 text-lg md:text-xl rounded-full w-full sm:w-auto"
             >
-              INSCREVER-SE AGORA 👑
+              INSCREVER-SE AGORA
             </Button>
-            
-            <p className="text-foreground/60 text-xs md:text-sm px-4">
-              Clique no botão acima para garantir sua vaga
-            </p>
+
+            <p className="text-foreground/60 text-xs md:text-sm px-4">Clique no botão acima para garantir sua vaga</p>
           </div>
         </div>
       </div>
