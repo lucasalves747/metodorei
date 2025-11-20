@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <section className="relative min-h-screen bg-background flex items-center overflow-hidden">
       {/* Background gradient effect */}
-      <div className="absolute inset-0 bg-gradient-radial from-primary/10 via-transparent to-transparent opacity-20" />
+      <div className="absolute inset-0 bg-gradient-radial from-primary/10 via-transparent to-transparent opacity-20 pointer-events-none" />
 
       <div className="container mx-auto px-4 py-12 md:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
@@ -89,7 +89,6 @@ export const Hero = () => {
                 variant="hero"
                 size="lg"
                 className="w-full sm:w-auto rounded-full px-8 md:px-12 py-4 md:py-6 text-base md:text-lg"
-              
               >
                 Inscreva-se Agora!
               </Button>
