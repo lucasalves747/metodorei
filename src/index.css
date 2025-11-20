@@ -196,6 +196,18 @@ All colors MUST be HSL.
   animation: slideFade 0.8s ease-out forwards;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 
 }

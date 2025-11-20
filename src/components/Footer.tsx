@@ -14,7 +14,7 @@ export const Footer = () => {
           </p>
           
           <div className="text-xs md:text-sm text-foreground/40">
-            <p>© 2024 Método REI. Todos os direitos reservados.</p>
+            <p>© 2025 Método REI. Todos os direitos reservados.</p>
           </div>
         </div>
       </div>
