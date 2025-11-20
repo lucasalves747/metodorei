@@ -140,6 +140,7 @@ export const EventDetails = () => {
             </Button>
             </a>
 
+            
             <p className="text-foreground/60 text-xs md:text-sm px-4">Clique no botão acima para garantir sua vaga</p>
           </div>
         </div>
