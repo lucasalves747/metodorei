@@ -2,9 +2,9 @@ import logoImage from "@/assets/metodo-rei-logo.png";
 
 export const Footer = () => {
   return (
-    <footer className="py-8 md:py-12 bg-card border-t border-border">
+    <footer className="py-8 md:py-12 bg-card border-t border-border overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center gap-4 md:gap-6 text-center">
+        <div className="flex flex-col items-center gap-4 md:gap-6 text-center animate-fade-in">
           <div>
             <img src={logoImage} alt="Método REI" className="h-10 md:h-12 w-auto mx-auto" />
           </div>

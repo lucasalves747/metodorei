@@ -8,10 +8,10 @@ export const Wealth = () => {
   ];
 
   return (
-    <section className="py-12 md:py-16 lg:py-24 bg-card">
+    <section className="py-12 md:py-16 lg:py-24 bg-card overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto space-y-8 md:space-y-12">
-          <div className="text-center space-y-4 md:space-y-6">
+          <div className="text-center space-y-4 md:space-y-6 animate-fade-in">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black px-4">
               <span className="text-primary">💰 ENRIQUECER</span>
               <span className="text-foreground"> É UMA QUESTÃO DE </span>
@@ -30,7 +30,7 @@ export const Wealth = () => {
           </div>
           
           <div className="space-y-4 md:space-y-6">
-            <h3 className="text-xl md:text-2xl font-bold text-center text-foreground mb-6 md:mb-8 px-4">
+            <h3 className="text-xl md:text-2xl font-bold text-center text-foreground mb-6 md:mb-8 px-4 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'backwards' }}>
               No Método REI, você vai:
             </h3>
             
@@ -38,7 +38,11 @@ export const Wealth = () => {
               {benefits.map((benefit, index) => (
                 <div 
                   key={index}
-                  className="flex items-start gap-3 md:gap-4 p-4 md:p-6 bg-background border border-border rounded-xl hover:border-primary/50 transition-all duration-300"
+                  className="flex items-start gap-3 md:gap-4 p-4 md:p-6 bg-background border border-border rounded-xl hover:border-primary/50 transition-all duration-300 animate-fade-in"
+                  style={{
+                    animationDelay: `${0.3 + index * 0.1}s`,
+                    animationFillMode: 'backwards'
+                  }}
                 >
                   <div className="flex-shrink-0 w-6 h-6 md:w-8 md:h-8 bg-primary/20 rounded-full flex items-center justify-center">
                     <span className="text-primary font-bold text-sm md:text-base">✓</span>
@@ -49,7 +53,7 @@ export const Wealth = () => {
             </div>
           </div>
           
-          <div className="text-center space-y-3 md:space-y-4 pt-4 md:pt-8">
+          <div className="text-center space-y-3 md:space-y-4 pt-4 md:pt-8 animate-fade-in" style={{ animationDelay: '0.9s', animationFillMode: 'backwards' }}>
             <div className="inline-block px-4 md:px-8 py-4 md:py-6 bg-primary/10 border-2 border-primary/30 rounded-2xl mx-4">
               <p className="text-base md:text-xl font-bold text-foreground mb-2">
                 💡 Riqueza sem identidade gera escravidão.
