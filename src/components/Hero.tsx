@@ -84,6 +84,8 @@ export const Hero = () => {
               <p className="text-foreground/90 font-semibold mb-3 md:mb-4 text-sm md:text-base">
                 Você está pronto para esta mudança?
               </p>
+              <a href="https://metodorei.com/form-jackson-viler
+">
               <Button
                 variant="hero"
                 size="lg"
@@ -94,6 +96,7 @@ export const Hero = () => {
               >
                 Inscreva-se Agora!
               </Button>
+              </a>
             </div>
           </div>
 

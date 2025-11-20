@@ -129,6 +129,8 @@ export const EventDetails = () => {
             className="text-center space-y-4 md:space-y-6 pt-6 md:pt-8 animate-fade-in"
             style={{ animationDelay: "1s", animationFillMode: "backwards" }}
           >
+            <a href="https://metodorei.com/form-jackson-viler
+">
             <Button
               variant="hero"
               size="lg"
@@ -136,6 +138,7 @@ export const EventDetails = () => {
             >
               INSCREVER-SE AGORA
             </Button>
+            </a>
 
             <p className="text-foreground/60 text-xs md:text-sm px-4">Clique no botão acima para garantir sua vaga</p>
           </div>
