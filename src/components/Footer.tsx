@@ -1,13 +1,12 @@
-import { Crown } from "lucide-react";
+import logoImage from "@/assets/metodo-rei-logo.png";
 
 export const Footer = () => {
   return (
     <footer className="py-12 bg-card border-t border-border">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center gap-6 text-center">
-          <div className="flex items-center gap-3">
-            <Crown className="w-8 h-8 text-primary" />
-            <span className="text-2xl font-black text-primary">MÉTODO REI</span>
+          <div>
+            <img src={logoImage} alt="Método REI" className="h-12 w-auto mx-auto" />
           </div>
           
           <p className="text-foreground/60 max-w-2xl">
