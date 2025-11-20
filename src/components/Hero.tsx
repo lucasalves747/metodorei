@@ -12,7 +12,7 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 ">
           {/* Left content */}
           <div className="space-y-6 md:space-y-8 animate-fade-in text-center lg:text-left">
-            <div className="mb-4 md:mb-6 hidden ">
+            <div className="hidden md:block mb-4 md:mb-6">
               <img src={logoImage} alt="Método REI" className="h-12 md:h-16 w-auto mx-auto lg:mx-0" />
             </div>
 
