@@ -84,15 +84,12 @@ export const Hero = () => {
               <p className="text-foreground/90 font-semibold mb-3 md:mb-4 text-sm md:text-base">
                 Você está pronto para esta mudança?
               </p>
-              <a href="https://metodorei.com/form-jackson-viler
-">
+              <a href="https://metodorei.com/form-jackson-viler">
               <Button
                 variant="hero"
                 size="lg"
                 className="w-full sm:w-auto rounded-full px-8 md:px-12 py-4 md:py-6 text-base md:text-lg"
-                onClick={() =>
-                  document.getElementById("inscricao")?.scrollIntoView({ behavior: "smooth" })
-                }
+              
               >
                 Inscreva-se Agora!
               </Button>
