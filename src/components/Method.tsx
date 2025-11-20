@@ -26,9 +26,9 @@ export const Method = () => {
         <div className="max-w-6xl mx-auto space-y-10 md:space-y-16">
           {/* Header */}
           <div className="text-center space-y-4 md:space-y-6 animate-fade-in">
-            <img src={logoImage} alt="Método REI" className="h-14 md:h-20 w-auto mx-auto" />
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black text-foreground px-4">
-              O QUE É O MÉTODO REI?
+            
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black text-foreground px-4 ">
+              O QUE É O <span className="text"> MÉTODO REI? </span>
             </h2>
             <p className="text-base md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed px-4">
               O Método REI é uma imersão presencial de dois dias, criada para destravar sua mente, 

@@ -1,4 +1,9 @@
+import { useState, useEffect } from "react";
+
 export const Testimonials = () => {
+  const [showAll, setShowAll] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
   const videoIds = [
     "h971z5tomTU",
     "gBFK00ATjRg",
@@ -10,6 +15,20 @@ export const Testimonials = () => {
     "2km4pyYiIKU",
   ];
 
+  // Detecta largura da tela
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768); // < md
+    };
+    checkMobile();
+
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  // Se for mobile e não estiver mostrando tudo → limitar a 3
+  const visibleVideos = isMobile && !showAll ? videoIds.slice(0, 3) : videoIds;
+
   return (
     <section className="py-12 md:py-16 lg:py-24 bg-card overflow-hidden">
       <div className="container mx-auto px-4">
@@ -20,15 +39,16 @@ export const Testimonials = () => {
               <span className="text-foreground"> DE TRANSFORMAÇÃO REAL</span>
             </h2>
           </div>
-          
+
+          {/* GRID DE VÍDEOS */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-            {videoIds.map((videoId, index) => (
-              <div 
+            {visibleVideos.map((videoId, index) => (
+              <div
                 key={index}
                 className="relative bg-background border border-border rounded-xl sm:rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.15)] hover:scale-105 animate-fade-in"
                 style={{
                   animationDelay: `${index * 0.1}s`,
-                  animationFillMode: 'backwards'
+                  animationFillMode: "backwards",
                 }}
               >
                 <div className="aspect-video w-full">
@@ -44,6 +64,18 @@ export const Testimonials = () => {
               </div>
             ))}
           </div>
+
+          {/* BOTÃO "VER MAIS" (só no mobile) */}
+          {isMobile && !showAll && (
+            <div className="text-center">
+              <button
+                onClick={() => setShowAll(true)}
+                className="mt-4 px-6 py-2 bg-primary text-white font-semibold rounded-full shadow-lg hover:bg-primary/80 transition"
+              >
+                Ver mais depoimentos
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </section>
