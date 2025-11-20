@@ -12,7 +12,7 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 ">
           {/* Left content */}
           <div className="space-y-6 md:space-y-8 animate-fade-in text-center lg:text-left">
-            <div className="hidden md:block mb-4 md:mb-6">
+            <div className="mb-4 md:mb-6">
               <img src={logoImage} alt="Método REI" className="h-12 md:h-16 w-auto mx-auto lg:mx-0" />
             </div>
 
@@ -81,7 +81,7 @@ export const Hero = () => {
               <img
                 src={crownImage}
                 alt="Coroa dourada"
-                className="relative w-full max-w-xs md:max-w-md lg:max-w-xl drop-shadow-[0_0_80px_rgba(212,175,55,0.4)]"
+                className="hidden md:block relative w-full max-w-xs md:max-w-md lg:max-w-xl drop-shadow-[0_0_80px_rgba(212,175,55,0.4)]"
               />
             </div>
           </div>
