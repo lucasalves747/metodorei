@@ -4,25 +4,25 @@ import pabloImage from "@/assets/pablo-marcal.png";
 
 export const Speakers = () => {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-12 md:py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto space-y-16">
+        <div className="max-w-6xl mx-auto space-y-10 md:space-y-16">
           <div className="text-center space-y-4">
-            <h2 className="text-4xl lg:text-5xl font-black">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black px-4">
               <span className="text-primary">QUEM CONDUZ</span>
               <span className="text-foreground"> SUA TRANSFORMAÇÃO</span>
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {/* Nézio Monteiro */}
-            <div className="space-y-6 p-6 bg-card border border-border rounded-2xl">
-              <div className="flex flex-col items-center gap-4">
-                <img src={nezioImage} alt="Nézio Monteiro" className="w-48 h-48 object-cover rounded-xl" />
-                <h3 className="text-2xl font-black text-primary text-center">Nézio Monteiro</h3>
+            <div className="space-y-4 md:space-y-6 p-4 md:p-6 bg-card border border-border rounded-2xl">
+              <div className="flex flex-col items-center gap-3 md:gap-4">
+                <img src={nezioImage} alt="Nézio Monteiro" className="w-32 h-32 md:w-48 md:h-48 object-cover rounded-xl" />
+                <h3 className="text-xl md:text-2xl font-black text-primary text-center">Nézio Monteiro</h3>
               </div>
 
-              <div className="space-y-4 text-foreground/80 leading-relaxed text-sm">
+              <div className="space-y-3 md:space-y-4 text-foreground/80 leading-relaxed text-xs md:text-sm">
                 <p>
                   Empreendedor serial com <span className="text-primary font-bold">24 empresas</span> em diversos
                   segmentos, mentor de mais de <span className="text-primary font-bold">20 mil pessoas</span> em cursos,
@@ -42,13 +42,13 @@ export const Speakers = () => {
             </div>
 
             {/* Dr. Santiago Vecina */}
-            <div className="space-y-6 p-6 bg-card border border-border rounded-2xl">
-              <div className="flex flex-col items-center gap-4">
-                <img src={santiagoImage} alt="Dr. Santiago Vecina" className="w-48 h-48 object-cover rounded-xl" />
-                <h3 className="text-2xl font-black text-primary text-center">Dr. Santiago Vecina</h3>
+            <div className="space-y-4 md:space-y-6 p-4 md:p-6 bg-card border border-border rounded-2xl">
+              <div className="flex flex-col items-center gap-3 md:gap-4">
+                <img src={santiagoImage} alt="Dr. Santiago Vecina" className="w-32 h-32 md:w-48 md:h-48 object-cover rounded-xl" />
+                <h3 className="text-xl md:text-2xl font-black text-primary text-center">Dr. Santiago Vecina</h3>
               </div>
 
-              <div className="space-y-4 text-foreground/80 leading-relaxed text-sm">
+              <div className="space-y-3 md:space-y-4 text-foreground/80 leading-relaxed text-xs md:text-sm">
                 <p>
                   Médico, empresário, triatleta e palestrante internacional, é especialista em nutrologia esportiva e
                   otimização de performance.
@@ -69,13 +69,13 @@ export const Speakers = () => {
             </div>
 
             {/* Pablo Marçal */}
-            <div className="space-y-6 p-6 bg-card border border-border rounded-2xl">
-              <div className="flex flex-col items-center gap-4">
-                <img src={pabloImage} alt="Pablo Marçal" className="w-48 h-48 object-cover rounded-xl" />
-                <h3 className="text-2xl font-black text-primary text-center">Pablo Marçal</h3>
+            <div className="space-y-4 md:space-y-6 p-4 md:p-6 bg-card border border-border rounded-2xl sm:col-span-2 lg:col-span-1">
+              <div className="flex flex-col items-center gap-3 md:gap-4">
+                <img src={pabloImage} alt="Pablo Marçal" className="w-32 h-32 md:w-48 md:h-48 object-cover rounded-xl" />
+                <h3 className="text-xl md:text-2xl font-black text-primary text-center">Pablo Marçal</h3>
               </div>
 
-              <div className="space-y-4 text-foreground/80 leading-relaxed text-sm">
+              <div className="space-y-3 md:space-y-4 text-foreground/80 leading-relaxed text-xs md:text-sm">
                 <p>
                   Cristão, casado com Carol Marçal, pai do Lorenzo, Benjamin, Miguel e Isabela. Aos 36 anos, se tornou
                   um dos <span className="text-primary font-bold">patriarcas mais prósperos do Brasil</span>.
