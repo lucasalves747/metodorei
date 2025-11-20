@@ -44,7 +44,10 @@ export const EventDetails = () => {
 
           {/* Event Details */}
           <div className="space-y-6 md:space-y-8">
-            <div className="text-center animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'backwards' }}>
+            <div
+              className="text-center animate-fade-in"
+              style={{ animationDelay: "0.2s", animationFillMode: "backwards" }}
+            >
               <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black px-4">
                 <span className="text-primary">✅ DETALHES</span>
                 <span className="text-foreground"> DO EVENTO</span>
@@ -59,7 +62,7 @@ export const EventDetails = () => {
                   className="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card border border-border rounded-xl animate-fade-in"
                   style={{
                     animationDelay: `${0.3 + index * 0.1}s`,
-                    animationFillMode: 'backwards'
+                    animationFillMode: "backwards",
                   }}
                 >
                   <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -74,7 +77,10 @@ export const EventDetails = () => {
             </div>
 
             {/* Includes */}
-            <div className="p-6 md:p-8 bg-card border border-border rounded-2xl space-y-4 md:space-y-6 animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'backwards' }}>
+            <div
+              className="p-6 md:p-8 bg-card border border-border rounded-2xl space-y-4 md:space-y-6 animate-fade-in"
+              style={{ animationDelay: "0.6s", animationFillMode: "backwards" }}
+            >
               <div className="flex items-center gap-3">
                 <Gift className="w-6 md:w-8 h-6 md:h-8 text-primary" />
                 <h4 className="text-xl md:text-2xl font-black text-foreground">Inclui:</h4>
@@ -92,27 +98,37 @@ export const EventDetails = () => {
 
             {/* Payment & Limits */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-              <div className="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card border border-primary/30 rounded-xl animate-fade-in" style={{ animationDelay: '0.7s', animationFillMode: 'backwards' }}>
+              <div
+                className="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card border border-primary/30 rounded-xl animate-fade-in"
+                style={{ animationDelay: "0.7s", animationFillMode: "backwards" }}
+              >
                 <CreditCard className="w-6 md:w-8 h-6 md:h-8 text-primary flex-shrink-0" />
-                <p className="text-foreground/90 font-semibold text-sm md:text-base">💳 Parcelamento disponível</p>
+                <p className="text-foreground/90 font-semibold text-sm md:text-base"> Parcelamento disponível</p>
               </div>
 
-              <div className="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card border border-primary/30 rounded-xl animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'backwards' }}>
+              <div
+                className="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card border border-primary/30 rounded-xl animate-fade-in"
+                style={{ animationDelay: "0.8s", animationFillMode: "backwards" }}
+              >
                 <Users className="w-6 md:w-8 h-6 md:h-8 text-primary flex-shrink-0" />
-                <p className="text-foreground/90 font-semibold text-sm md:text-base">
-                  👫 Desconto especial para casais
-                </p>
+                <p className="text-foreground/90 font-semibold text-sm md:text-base">Desconto especial para casais</p>
               </div>
 
-              <div className="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card border border-destructive/30 rounded-xl sm:col-span-2 lg:col-span-1 animate-fade-in" style={{ animationDelay: '0.9s', animationFillMode: 'backwards' }}>
+              <div
+                className="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card border border-destructive/30 rounded-xl sm:col-span-2 lg:col-span-1 animate-fade-in"
+                style={{ animationDelay: "0.9s", animationFillMode: "backwards" }}
+              >
                 <Ban className="w-6 md:w-8 h-6 md:h-8 text-destructive flex-shrink-0" />
-                <p className="text-foreground/90 font-semibold text-sm md:text-base">⛔ Vagas limitadas</p>
+                <p className="text-foreground/90 font-semibold text-sm md:text-base"> Vagas limitadas</p>
               </div>
             </div>
           </div>
 
           {/* CTA */}
-          <div className="text-center space-y-4 md:space-y-6 pt-6 md:pt-8 animate-fade-in" style={{ animationDelay: '1s', animationFillMode: 'backwards' }}>
+          <div
+            className="text-center space-y-4 md:space-y-6 pt-6 md:pt-8 animate-fade-in"
+            style={{ animationDelay: "1s", animationFillMode: "backwards" }}
+          >
             <Button
               variant="hero"
               size="lg"
