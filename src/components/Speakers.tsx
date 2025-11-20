@@ -4,10 +4,10 @@ import pabloImage from "@/assets/pablo-marcal.png";
 
 export const Speakers = () => {
   return (
-    <section className="py-12 md:py-16 lg:py-24 bg-background">
+    <section className="py-12 md:py-16 lg:py-24 bg-background overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto space-y-12 md:space-y-16">
-          <div className="text-center space-y-4">
+          <div className="text-center space-y-4 animate-fade-in">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black px-4">
               <span className="text-primary">QUEM CONDUZ</span>
               <span className="text-foreground"> SUA TRANSFORMAÇÃO</span>
@@ -16,7 +16,7 @@ export const Speakers = () => {
 
           <div className="space-y-16 md:space-y-24">
             {/* Nézio Monteiro */}
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center bg-card/30 rounded-3xl overflow-hidden p-6 md:p-12">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center bg-card/30 rounded-3xl overflow-hidden p-6 md:p-12 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'backwards' }}>
               <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
                 <div>
                   <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
@@ -55,7 +55,7 @@ export const Speakers = () => {
             </div>
 
             {/* Dr. Santiago Vecina */}
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center bg-card/30 rounded-3xl overflow-hidden p-6 md:p-12">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center bg-card/30 rounded-3xl overflow-hidden p-6 md:p-12 animate-fade-in" style={{ animationDelay: '0.4s', animationFillMode: 'backwards' }}>
               <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
                 <div>
                   <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
@@ -99,7 +99,7 @@ export const Speakers = () => {
             </div>
 
             {/* Pablo Marçal */}
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center bg-card/30 rounded-3xl overflow-hidden p-6 md:p-12">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center bg-card/30 rounded-3xl overflow-hidden p-6 md:p-12 animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'backwards' }}>
               <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
                 <div>
                   <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight">

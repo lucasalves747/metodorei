@@ -2,10 +2,10 @@ import { Sword, Building2, Rocket } from "lucide-react";
 
 export const HowItWorks = () => {
   return (
-    <section className="py-12 md:py-16 lg:py-24 bg-background">
+    <section className="py-12 md:py-16 lg:py-24 bg-background overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto space-y-10 md:space-y-16">
-          <div className="text-center space-y-4">
+          <div className="text-center space-y-4 animate-fade-in">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black px-4">
               <span className="text-primary">🧠 COMO </span>
               <span className="text-foreground">FUNCIONA</span>
@@ -14,7 +14,7 @@ export const HowItWorks = () => {
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {/* Day 1 */}
-            <div className="space-y-4 md:space-y-6 p-6 md:p-8 bg-card border-2 border-destructive/30 rounded-2xl">
+            <div className="space-y-4 md:space-y-6 p-6 md:p-8 bg-card border-2 border-destructive/30 rounded-2xl animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'backwards' }}>
               <div className="flex items-center gap-3">
                 <Sword className="w-8 md:w-10 h-8 md:h-10 text-destructive flex-shrink-0" />
                 <div>
@@ -33,7 +33,7 @@ export const HowItWorks = () => {
             </div>
             
             {/* Day 2 */}
-            <div className="space-y-4 md:space-y-6 p-6 md:p-8 bg-card border-2 border-primary/50 rounded-2xl">
+            <div className="space-y-4 md:space-y-6 p-6 md:p-8 bg-card border-2 border-primary/50 rounded-2xl animate-fade-in" style={{ animationDelay: '0.35s', animationFillMode: 'backwards' }}>
               <div className="flex items-center gap-3">
                 <Building2 className="w-8 md:w-10 h-8 md:h-10 text-primary flex-shrink-0" />
                 <div>
@@ -52,7 +52,7 @@ export const HowItWorks = () => {
             </div>
             
             {/* Post-REI */}
-            <div className="space-y-4 md:space-y-6 p-6 md:p-8 bg-card border-2 border-accent/50 rounded-2xl sm:col-span-2 lg:col-span-1">
+            <div className="space-y-4 md:space-y-6 p-6 md:p-8 bg-card border-2 border-accent/50 rounded-2xl sm:col-span-2 lg:col-span-1 animate-fade-in" style={{ animationDelay: '0.5s', animationFillMode: 'backwards' }}>
               <div className="flex items-center gap-3">
                 <Rocket className="w-8 md:w-10 h-8 md:h-10 text-accent flex-shrink-0" />
                 <div>
