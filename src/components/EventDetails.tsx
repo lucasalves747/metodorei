@@ -3,9 +3,10 @@ import { MapPin, Calendar, Clock, Gift, CreditCard, Users, Ban } from "lucide-re
 
 export const EventDetails = () => {
   const details = [
-    { icon: MapPin, label: "Local", value: "Jacksonville, FL" },
-    { icon: Calendar, label: "Data", value: "22 e 23 de Novembro" },
-    { icon: Clock, label: "Horário", value: "9h às 19h" },
+    { icon: MapPin, label: "Local", value: "",link:"https://maps.app.goo.gl/zXaKbPqu81wcArm26", valueLink:"Google Maps" },
+    { icon: Calendar, label: "Data", value: "22 e 23 de Novembro",link:"", valueLink:"" },
+    { icon: Clock, label: "Horário", value: "9h às 19h",
+      link:"", valueLink:"" },
   ];
 
   const includes = [
@@ -71,6 +72,7 @@ export const EventDetails = () => {
                   <div>
                     <p className="text-xs md:text-sm text-foreground/60 font-medium">{detail.label}</p>
                     <p className="text-sm md:text-lg font-bold text-foreground">{detail.value}</p>
+                    <a className="font-bold " href={detail.link}>{detail.valueLink}</a>
                   </div>
                 </div>
               ))}

@@ -1,6 +1,7 @@
-import nezioImage from "@/assets/nezio-monteiro.png";
+import djImage from "@/assets/Dj.png";
 import santiagoImage from "@/assets/santiago-vecina.png";
 import pabloImage from "@/assets/pablo-marcal.png";
+import hewertonImage from "@/assets/hewerton.png"
 
 export const Speakers = () => {
   return (
@@ -15,41 +16,73 @@ export const Speakers = () => {
           </div>
 
           <div className="space-y-16 md:space-y-24">
-            {/* Nézio Monteiro */}
+            {/* Dj*/}
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center bg-card/30 rounded-3xl overflow-hidden p-6 md:p-12 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'backwards' }}>
               <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
                 <div>
                   <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
-                    <span className="text-foreground">Nézio</span>
+                    <span className="text-foreground">DJ</span>
                     <br />
-                    <span className="text-muted-foreground">Monteiro</span>
+                    <span className="text-muted-foreground">Belieny</span>
                   </h3>
                 </div>
 
                 <div className="space-y-4 md:space-y-5 text-foreground/80 leading-relaxed text-sm md:text-base">
                   <p>
-                    Empreendedor serial com <span className="text-primary font-bold">24 empresas</span> em diversos
-                    segmentos, mentor de mais de <span className="text-primary font-bold">20 mil pessoas</span> em cursos,
-                    eventos e treinamentos de alta performance.
+                    Estrategista de negócios e especialista em <span className="text-primary font-bold ">implementação de inteligência artificial</span>, com habilidade para transformar desafios complexos em estratégias simples e acionáveis. Ao longo da carreira, ajudou empresas de diversos setores a acelerar o crescimento, otimizar processos e adotar tecnologia sem perder o toque humano.
                   </p>
 
                   <p>
-                    Criador do <span className="font-bold text-foreground">GSR – Gestão Simplificada de Resultados</span>,
-                    um modelo prático e poderoso que elimina a burocracia e gera crescimento real.
+                    Antes de se destacar no mundo dos negócios e da IA, <span className="text-foreground font-bold">DJ trabalhou nas Nações Unidas </span>, colaborando em iniciativas voltadas para o desenvolvimento global e a integração cultural. Essa experiência moldou sua capacidade de atuar em ambientes diversos, alinhar interesses e entregar soluções eficazes em contextos locais e internacionais
                   </p>
 
                   <p className="text-foreground font-medium">
-                    Seu propósito é destravar pessoas e empresários que têm valores sólidos, visão de impacto e mensagens
-                    fortes no coração.
+                   Hoje, DJ combina sua visão global com profundo conhecimento em aceleração de vendas e inovação orientada por IA. Seja palestrando, assessorando executivos ou desenvolvendo frameworks como o MOTIVAR, sua missão é clara: ajudar pessoas e organizações a pensar grande, agir rápido e gerar impacto duradouro.
                   </p>
                 </div>
               </div>
 
               <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
                 <img 
-                  src={nezioImage} 
-                  alt="Nézio Monteiro" 
-                  className="w-full max-w-md lg:max-w-lg h-auto object-cover rounded-2xl"
+                  src={djImage} 
+                  alt="Dj" 
+                  className="w-full max-w-md lg:max-w-lg h-auto object-cover rounded-2xl bg-black"
+                />
+              </div>
+            </div>
+
+            {/*Hewerton*/}
+
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center bg-card/30 rounded-3xl overflow-hidden p-6 md:p-12 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'backwards' }}>
+              <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
+                <div>
+                  <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
+                    <span className="text-foreground">Hewerton</span>
+                    <br />
+                    <span className="text-muted-foreground">Scheidegger</span>
+                  </h3>
+                </div>
+
+                <div className="space-y-4 md:space-y-5 text-foreground/80 leading-relaxed text-sm md:text-base">
+                  <p>
+                    Empresário multifacetado, <span className="text-primary font-bold ">mentor em finanças</span>, negócios e espiritualidade, com trajetória como advogado, contador e consultor financeiro. Dedica-se a transformar vidas por meio de treinamentos, atuação pastoral e produção intelectual, incluindo o livro “1000 Códigos de Sabedoria”. <span className="text-primary font-bold ">Criou o Método REI</span>, o master mind Reinantes e o <span className="text-primary font-bold ">movimento REIGN</span>, impactando milhões.
+                  </p>
+
+                  <p>
+                    Em missões na África, fundou projetos sociais que auxiliam milhares de crianças. Também foi cofundador do <span className="text-foreground font-bold"> Ministério Palavra da Fé</span>, onde atuou como vice-presidente por 14 anos. Especialista em planejamento tributário, atuou como perito contábil, consultor jurídico, professor universitário e consultor do Sebrae por mais de dez anos. Hoje <span className="text-foreground font-bold">administra mais de doze empresas</span> em diferentes setores.
+                  </p>
+
+                  <p className="text-foreground font-medium">
+                  Casado com Luciana há 28 anos e pai de João, Lucas e Israel, já participou de provas como Ironman e Ultraman. Seu propósito é ajudar pessoas a viverem com plenitude
+                  </p>
+                </div>
+              </div>
+
+              <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+                <img 
+                  src={hewertonImage} 
+                  alt="Hewerton" 
+                  className="w-full max-w-md lg:max-w-lg h-auto object-cover rounded-2xl bg-black"
                 />
               </div>
             </div>
