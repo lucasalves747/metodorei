@@ -56,15 +56,15 @@ export const Hero = () => {
             {/* Items */}
             <div className="space-y-2 md:space-y-3 animate-fade-in">
               <div className="flex items-center gap-2 md:gap-3 lg:justify-start">
-                <span className="text-xl md:text-2xl">🎯</span>
+                
                 <span className="text-foreground/90 text-sm md:text-base">Liberdade Financeira</span>
               </div>
               <div className="flex items-center gap-2 md:gap-3 lg:justify-start">
-                <span className="text-xl md:text-2xl">🧠</span>
+                
                 <span className="text-foreground/90 text-sm md:text-base">Mentalidade e Identidade Restauradas</span>
               </div>
               <div className="flex items-center gap-2 md:gap-3 lg:justify-start">
-                <span className="text-xl md:text-2xl">🔥</span>
+                
                 <span className="text-foreground/90 text-sm md:text-base">Plano de Ação com Direção Clara</span>
               </div>
             </div>

@@ -13,7 +13,7 @@ export const Wealth = () => {
         <div className="max-w-5xl mx-auto space-y-8 md:space-y-12">
           <div className="text-center space-y-4 md:space-y-6 animate-fade-in">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black px-4">
-              <span className="text-primary">💰 ENRIQUECER</span>
+              <span className="text-primary">ENRIQUECER</span>
               <span className="text-foreground"> É UMA QUESTÃO DE </span>
               <span className="text-primary">IDENTIDADE</span>
             </h2>

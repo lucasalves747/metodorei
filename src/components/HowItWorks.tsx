@@ -31,7 +31,7 @@ export const HowItWorks = () => {
         <div className="max-w-6xl mx-auto space-y-10 md:space-y-16">
           <div className="text-center space-y-4 reveal">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black px-4">
-              <span className="text-primary">🧠 COMO </span>
+              <span className="text-primary">COMO </span>
               <span className="text-foreground">FUNCIONA</span>
             </h2>
           </div>
@@ -98,13 +98,13 @@ export const HowItWorks = () => {
                 <br />
                 <br />
                 <span className="text-xs md:text-sm text-foreground/70">
-                  💰 Finanças | ❤️ Casamento | 💪 Saúde
+                   Finanças | Casamento | Saúde
                   <br />
-                  👨‍👩‍👧 Filhos | 📈 Negócios | 🧠 Mentalidade
+                   Filhos | Negócios | Mentalidade
                   <br />
-                  📊 Planejamento | 🎯 Liderança | 🌍 Impacto
+                 Planejamento | Liderança | Impacto
                   <br />
-                  🔥 Produtividade | 🕊️ Vida Plena | 🔓 Autonomia
+                 Produtividade | Vida Plena | Autonomia
                 </span>
               </p>
             </div>

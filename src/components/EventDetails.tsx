@@ -21,13 +21,13 @@ export const EventDetails = () => {
           {/* Last Call */}
           <div className="text-center space-y-4 md:space-y-6 p-6 md:p-12 bg-destructive/5 border-2 border-destructive/30 rounded-2xl md:rounded-3xl animate-fade-in">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black px-4">
-              <span className="text-destructive">🚨 ÚLTIMA</span>
+              <span className="text-destructive">ÚLTIMA</span>
               <span className="text-foreground"> CHAMADA</span>
             </h2>
 
             <div className="space-y-3 md:space-y-4 max-w-3xl mx-auto px-4">
               <p className="text-base md:text-xl text-foreground/90 font-semibold">
-                ⚠️ Essa é sua chance real de fazer diferente ainda em 2025.
+                Essa é sua chance real de fazer diferente ainda em 2025.
               </p>
               <p className="text-sm md:text-lg text-foreground/80">
                 As vagas são limitadas e o evento é 100% presencial.
@@ -49,7 +49,7 @@ export const EventDetails = () => {
               style={{ animationDelay: "0.2s", animationFillMode: "backwards" }}
             >
               <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black px-4">
-                <span className="text-primary">✅ DETALHES</span>
+                <span className="text-primary">DETALHES</span>
                 <span className="text-foreground"> DO EVENTO</span>
               </h3>
             </div>
