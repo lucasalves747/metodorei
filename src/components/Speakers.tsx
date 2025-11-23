@@ -50,42 +50,7 @@ export const Speakers = () => {
                 />
               </div>
             </div>
-
-            {/*Hewerton*/}
-
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center bg-card/30 rounded-3xl overflow-hidden p-6 md:p-12 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'backwards' }}>
-              <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
-                <div>
-                  <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
-                    <span className="text-foreground">Hewerton</span>
-                    <br />
-                    <span className="text-muted-foreground">Scheidegger</span>
-                  </h3>
-                </div>
-
-                <div className="space-y-4 md:space-y-5 text-foreground/80 leading-relaxed text-sm md:text-base">
-                  <p>
-                    Empresário multifacetado, <span className="text-primary font-bold ">mentor em finanças</span>, negócios e espiritualidade, com trajetória como advogado, contador e consultor financeiro. Dedica-se a transformar vidas por meio de treinamentos, atuação pastoral e produção intelectual, incluindo o livro “1000 Códigos de Sabedoria”. <span className="text-primary font-bold ">Criou o Método REI</span>, o master mind Reinantes e o <span className="text-primary font-bold ">movimento REIGN</span>, impactando milhões.
-                  </p>
-
-                  <p>
-                    Em missões na África, fundou projetos sociais que auxiliam milhares de crianças. Também foi cofundador do <span className="text-foreground font-bold"> Ministério Palavra da Fé</span>, onde atuou como vice-presidente por 14 anos. Especialista em planejamento tributário, atuou como perito contábil, consultor jurídico, professor universitário e consultor do Sebrae por mais de dez anos. Hoje <span className="text-foreground font-bold">administra mais de doze empresas</span> em diferentes setores.
-                  </p>
-
-                  <p className="text-foreground font-medium">
-                  Casado com Luciana há 28 anos e pai de João, Lucas e Israel, já participou de provas como Ironman e Ultraman. Seu propósito é ajudar pessoas a viverem com plenitude
-                  </p>
-                </div>
-              </div>
-
-              <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-                <img 
-                  src={hewertonImage} 
-                  alt="Hewerton" 
-                  className="w-full max-w-md lg:max-w-lg h-auto object-cover rounded-2xl bg-black"
-                />
-              </div>
-            </div>
+            
 
             {/* Dr. Santiago Vecina */}
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center bg-card/30 rounded-3xl overflow-hidden p-6 md:p-12 animate-fade-in" style={{ animationDelay: '0.4s', animationFillMode: 'backwards' }}>

@@ -16,7 +16,7 @@ const Index = () => {
       <PainPoints />
       <Method />
       <Wealth />
-      <HowItWorks />
+      <HowItWorks /> 
       <Testimonials />
       <Speakers />
       <FAQ />
