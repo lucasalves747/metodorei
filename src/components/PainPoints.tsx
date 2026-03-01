@@ -30,7 +30,7 @@ export const PainPoints = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-12 md:py-16 lg:py-24 bg-card overflow-hidden"
+      className="py-12 md:py-16 lg:py-24 bg-light-section overflow-hidden"
     >
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8 md:space-y-12">

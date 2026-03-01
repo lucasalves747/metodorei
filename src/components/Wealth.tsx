@@ -8,7 +8,7 @@ export const Wealth = () => {
   ];
 
   return (
-    <section className="py-12 md:py-16 lg:py-24 bg-card overflow-hidden">
+    <section className="py-12 md:py-16 lg:py-24 bg-light-section overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto space-y-8 md:space-y-12">
           <div className="text-center space-y-4 md:space-y-6 animate-fade-in">

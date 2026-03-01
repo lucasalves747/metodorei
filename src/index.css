@@ -211,4 +211,38 @@ All colors MUST be HSL.
   transform: translateY(0);
 }
 
+.bg-light-section {
+  background-color: hsl(40 20% 95%);
+  color: hsl(0 0% 10%);
+}
+
+.bg-light-section .text-foreground,
+.bg-light-section .text-foreground\/90,
+.bg-light-section .text-foreground\/80 {
+  color: hsl(0 0% 15%);
+}
+
+.bg-light-section .text-foreground\/60 {
+  color: hsl(0 0% 40%);
+}
+
+.bg-light-section .bg-background {
+  background-color: hsl(0 0% 100%);
+}
+
+.bg-light-section .bg-card {
+  background-color: hsl(40 15% 92%);
+}
+
+.bg-light-section .border-border {
+  border-color: hsl(40 10% 85%);
+}
+
+.bg-parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 }

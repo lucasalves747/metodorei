@@ -1,12 +1,14 @@
 import djImage from "@/assets/Dj.png";
+import parallaxBg from "@/assets/parallax-bg.jpg";
 import santiagoImage from "@/assets/santiago-vecina.png";
 import pabloImage from "@/assets/pablo-marcal.png";
 import hewertonImage from "@/assets/hewerton.png"
 
 export const Speakers = () => {
   return (
-    <section className="py-12 md:py-16 lg:py-24 bg-background overflow-hidden">
-      <div className="container mx-auto px-4">
+    <section className="py-12 md:py-16 lg:py-24 bg-parallax overflow-hidden relative" style={{ backgroundImage: `url(${parallaxBg})` }}>
+      <div className="absolute inset-0 bg-background/80 pointer-events-none" />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto space-y-12 md:space-y-16">
           <div className="text-center space-y-4 animate-fade-in">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black px-4">
