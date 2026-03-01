@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Sword, Building2, Rocket } from "lucide-react";
+import parallaxBg from "@/assets/parallax-bg.jpg";
 
 export const HowItWorks = () => {
   const sectionRef = useRef(null);
@@ -25,9 +26,11 @@ export const HowItWorks = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-12 md:py-16 lg:py-24 bg-background overflow-hidden"
+      className="py-12 md:py-16 lg:py-24 bg-parallax overflow-hidden relative"
+      style={{ backgroundImage: `url(${parallaxBg})` }}
     >
-      <div className="container mx-auto px-4">
+      <div className="absolute inset-0 bg-background/80 pointer-events-none" />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto space-y-10 md:space-y-16">
           <div className="text-center space-y-4 reveal">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black px-4">

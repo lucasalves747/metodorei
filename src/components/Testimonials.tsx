@@ -30,7 +30,7 @@ export const Testimonials = () => {
   const visibleVideos = isMobile && !showAll ? videoIds.slice(0, 3) : videoIds;
 
   return (
-    <section className="py-12 md:py-16 lg:py-24 bg-card overflow-hidden">
+    <section className="py-12 md:py-16 lg:py-24 bg-light-section overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto space-y-10 md:space-y-16">
           <div className="text-center space-y-4 animate-fade-in">
