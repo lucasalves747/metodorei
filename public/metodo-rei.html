@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Método REI – Desbloqueie Sua Identidade. Ative Sua Riqueza. Reine na Vida.</title>
+  <meta name="description" content="Imersão presencial de 2 dias em Jacksonville. 22 e 23 de Novembro. Desbloqueie sua identidade, ative sua riqueza e reine na vida." />
+  <link rel="icon" href="https://metodorei.lovable.app/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        container: { center: true, padding: '2rem', screens: { '2xl': '1400px' } },
+        extend: {
+          fontFamily: { sans: ['Outfit','ui-sans-serif','system-ui','sans-serif'] },
+          colors: {
+            border: 'hsl(0 0% 20%)',
+            background: 'hsl(0 0% 4%)',
+            foreground: 'hsl(0 0% 98%)',
+            card: 'hsl(0 0% 8%)',
+            primary: { DEFAULT: 'hsl(39 74% 54%)', foreground: 'hsl(0 0% 10%)' },
+            secondary: { DEFAULT: 'hsl(45 75% 45%)' },
+            muted: { DEFAULT: 'hsl(0 0% 15%)', foreground: 'hsl(0 0% 65%)' },
+            accent: { DEFAULT: 'hsl(45 90% 60%)', foreground: 'hsl(0 0% 10%)' },
+            destructive: { DEFAULT: 'hsl(0 84% 60%)' },
+            gold: { DEFAULT: 'hsl(45 85% 55%)', light: 'hsl(45 90% 65%)', dark: 'hsl(45 75% 45%)' },
+          },
+          borderRadius: { lg: '0.75rem', md: 'calc(0.75rem - 2px)', sm: 'calc(0.75rem - 4px)' },
+        }
+      }
+    }
+  </script>
+  <style>
+    * { border-color: hsl(0 0% 20%); }
+    body { background: hsl(0 0% 4%); color: hsl(0 0% 98%); font-family: 'Outfit', sans-serif; margin: 0; }
+
+    /* Animations */
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-20px)} }
+    @keyframes fade-in { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes slide-in-left { 0%{opacity:0;transform:translateX(-60px)} 100%{opacity:1;transform:translateX(0)} }
+    @keyframes slide-in-right { 0%{opacity:0;transform:translateX(60px)} 100%{opacity:1;transform:translateX(0)} }
+
+    .animate-float { animation: float 6s ease-in-out infinite; }
+    .animate-fade-in { animation: fade-in 1s ease-out both; }
+    .animate-slide-in-left { animation: slide-in-left 1.3s ease-out forwards; }
+    .animate-slide-in-right { animation: slide-in-right 1.3s ease-out forwards; }
+
+    .bg-gradient-radial { background: radial-gradient(circle at center, var(--tw-gradient-stops)); }
+
+    /* Light section */
+    .bg-light-section { background-color: hsl(40 20% 95%); color: hsl(0 0% 10%); }
+    .bg-light-section .text-foreground { color: hsl(0 0% 15%) !important; }
+    .bg-light-section .text-foreground\/90, .bg-light-section [class*="text-foreground/9"] { color: hsl(0 0% 20%) !important; }
+    .bg-light-section .text-foreground\/80, .bg-light-section [class*="text-foreground/8"] { color: hsl(0 0% 25%) !important; }
+    .bg-light-section .text-foreground\/60, .bg-light-section [class*="text-foreground/6"] { color: hsl(0 0% 40%) !important; }
+    .bg-light-section .bg-background { background-color: hsl(0 0% 100%) !important; }
+    .bg-light-section .bg-card { background-color: hsl(40 15% 92%) !important; }
+    .bg-light-section .border-border, .bg-light-section [class*="border-border"] { border-color: hsl(40 10% 85%) !important; }
+
+    /* Parallax */
+    .bg-parallax { background-attachment: fixed; background-size: cover; background-position: center; background-repeat: no-repeat; }
+
+    /* Scroll reveal */
+    .reveal { opacity:0; transform:translateY(40px); transition:all 0.8s ease-out; }
+    .reveal.show { opacity:1; transform:translateY(0); }
+
+    /* Hero button */
+    .btn-hero {
+      display:inline-flex;align-items:center;justify-content:center;
+      background:hsl(39 74% 54%);color:hsl(0 0% 10%);
+      padding:1rem 3rem;border-radius:9999px;font-weight:800;font-size:1.1rem;
+      text-transform:uppercase;letter-spacing:0.05em;text-decoration:none;
+      box-shadow:0 0 40px rgba(212,175,55,0.3);
+      transition:all 0.3s;
+    }
+    .btn-hero:hover { box-shadow:0 0 60px rgba(212,175,55,0.5); filter:brightness(1.1); }
+
+    /* Accordion */
+    details summary { cursor:pointer; list-style:none; }
+    details summary::-webkit-details-marker { display:none; }
+    details summary::after { content:'▸'; float:right; transition:transform 0.3s; font-size:1.2em; }
+    details[open] summary::after { transform:rotate(90deg); }
+    details[open] .faq-answer { animation: fade-in 0.3s ease-out; }
+
+    /* Images */
+    .img-base { display:block; max-width:100%; height:auto; }
+
+    @media (max-width: 767px) {
+      .hide-mobile { display:none !important; }
+    }
+    @media (min-width: 768px) {
+      .hide-desktop { display:none !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===================== HERO ===================== -->
+<section class="relative min-h-screen bg-background flex items-center overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-radial from-primary/10 via-transparent to-transparent opacity-20 pointer-events-none"></div>
+  <div class="container mx-auto px-4 py-12 md:py-20">
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
+      <div class="space-y-6 md:space-y-8 lg:text-left">
+        <div class="mb-4 md:mb-6 animate-fade-in">
+          <img src="https://metodorei.lovable.app/assets/metodo-rei-logo-DZXdGaBm.png" alt="Método REI" class="h-12 md:h-16 w-auto mx-auto lg:mx-0" />
+        </div>
+        <div class="hide-desktop flex justify-center mb-4 animate-slide-in-right">
+          <img src="https://metodorei.lovable.app/assets/crown-BxXz3vx4.png" alt="Coroa dourada" class="w-40" style="filter:drop-shadow(0 0 40px rgba(212,175,55,0.4))" />
+        </div>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black leading-tight animate-slide-in-left">
+          <span class="text-primary">Desbloqueie Sua Identidade.</span><br />
+          <span class="text-foreground">Ative Sua Riqueza.</span><br />
+          <span class="text-primary">Reine na Vida.</span>
+        </h1>
+        <div class="space-y-2 animate-fade-in">
+          <p class="text-foreground/90 text-base md:text-lg lg:text-xl font-semibold">
+            22 e 23 de Novembro | Jacksonville - Evento Presencial Transformador
+          </p>
+        </div>
+        <div class="space-y-3 md:space-y-4 text-foreground/80 text-sm md:text-base leading-relaxed animate-fade-in">
+          <p>Você sente que está fazendo tudo certo, mas a vida não flui como deveria?<br />Talvez o problema não esteja no que você faz, mas em quem você ainda não se tornou.</p>
+          <p class="font-medium">Em apenas <span class="text-primary font-bold">2 dias presenciais</span>, o Método REI vai te conduzir por uma jornada intensa de desbloqueio, reconstrução e ativação — para que você finalmente governe sua vida com clareza, autoridade e prosperidade real.</p>
+        </div>
+        <div class="space-y-2 md:space-y-3 animate-fade-in">
+          <div class="flex items-center gap-2 md:gap-3 lg:justify-start"><span class="text-foreground/90 text-sm md:text-base">Liberdade Financeira</span></div>
+          <div class="flex items-center gap-2 md:gap-3 lg:justify-start"><span class="text-foreground/90 text-sm md:text-base">Mentalidade e Identidade Restauradas</span></div>
+          <div class="flex items-center gap-2 md:gap-3 lg:justify-start"><span class="text-foreground/90 text-sm md:text-base">Plano de Ação com Direção Clara</span></div>
+        </div>
+        <div class="pt-4 md:pt-6 animate-fade-in">
+          <p class="text-foreground/90 font-semibold mb-3 md:mb-4 text-sm md:text-base">Você está pronto para esta mudança?</p>
+          <a href="https://metodorei.com/form-jackson-viler" class="btn-hero">Inscreva-se Agora!</a>
+        </div>
+      </div>
+      <div class="relative justify-center items-center lg:justify-end mt-8 lg:mt-0 hide-mobile flex animate-slide-in-right">
+        <div class="relative animate-float">
+          <div class="absolute inset-0 bg-gradient-radial from-primary/30 via-primary/10 to-transparent blur-3xl"></div>
+          <img src="https://metodorei.lovable.app/assets/crown-BxXz3vx4.png" alt="Coroa dourada" class="relative w-full max-w-xs md:max-w-md lg:max-w-xl" style="filter:drop-shadow(0 0 80px rgba(212,175,55,0.4))" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PAIN POINTS ===================== -->
+<section class="py-12 md:py-16 lg:py-24 bg-light-section overflow-hidden" id="pain">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto text-center space-y-8 md:space-y-12" style="max-width:56rem;margin:0 auto;">
+      <div class="space-y-4 animate-fade-in">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full" style="background:hsl(39 74% 54% / 0.1)">
+          <span class="text-primary font-bold uppercase text-xs md:text-sm tracking-wider">Você se sente assim?</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-foreground px-4">Você sente que:</h2>
+      </div>
+      <div class="space-y-4 md:space-y-6">
+        <div class="p-4 md:p-6 bg-background border border-border rounded-xl animate-fade-in" style="animation-delay:0.1s"><p class="text-base md:text-lg text-foreground/90">Trabalha demais e mesmo assim não sai do lugar?</p></div>
+        <div class="p-4 md:p-6 bg-background border border-border rounded-xl animate-fade-in" style="animation-delay:0.2s"><p class="text-base md:text-lg text-foreground/90">Já fez cursos, mentorias ou terapias… mas continua travado?</p></div>
+        <div class="p-4 md:p-6 bg-background border border-border rounded-xl animate-fade-in" style="animation-delay:0.3s"><p class="text-base md:text-lg text-foreground/90">Tem potencial, mas se sabota sempre que começa a crescer?</p></div>
+        <div class="p-4 md:p-6 bg-background border border-border rounded-xl animate-fade-in" style="animation-delay:0.4s"><p class="text-base md:text-lg text-foreground/90">Ama sua família, mas sente que poderia ser um cônjuge ou pai/mãe melhor?</p></div>
+        <div class="p-4 md:p-6 bg-background border border-border rounded-xl animate-fade-in" style="animation-delay:0.5s"><p class="text-base md:text-lg text-foreground/90">Quer direção e clareza, mas vive confuso, sobrecarregado ou paralisado?</p></div>
+      </div>
+      <div class="pt-4 md:pt-8 animate-fade-in" style="animation-delay:0.6s">
+        <div class="inline-block px-4 md:px-8 py-3 md:py-4 rounded-xl" style="background:hsl(0 84% 60% / 0.1);border:1px solid hsl(0 84% 60% / 0.3);">
+          <p class="text-base md:text-xl font-bold text-foreground">⚠️ Se respondeu "sim" para qualquer uma dessas, o Método REI é pra você.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== METHOD ===================== -->
+<section class="py-12 md:py-16 lg:py-24 bg-background overflow-hidden">
+  <div class="container mx-auto px-4">
+    <div style="max-width:72rem;margin:0 auto;" class="space-y-10 md:space-y-16">
+      <div class="text-center space-y-4 md:space-y-6 animate-fade-in">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black text-foreground px-4">O QUE É O <span>MÉTODO REI?</span></h2>
+        <p class="text-base md:text-xl text-foreground/80 leading-relaxed px-4" style="max-width:48rem;margin:0 auto;">O Método REI é uma imersão presencial de dois dias, criada para destravar sua mente, alinhar sua visão e ativar uma nova versão sua — mais forte, próspera e no controle.</p>
+      </div>
+      <div class="space-y-4 md:space-y-6">
+        <h3 class="text-xl md:text-2xl font-bold text-center text-primary mb-6 md:mb-8 px-4 animate-fade-in" style="animation-delay:0.2s">Os 3 Pilares da Transformação:</h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          <div class="group relative p-6 md:p-8 bg-card border border-border rounded-2xl animate-fade-in" style="animation-delay:0.4s">
+            <div class="space-y-3 md:space-y-4">
+              <div class="w-12 h-12 md:w-16 md:h-16 rounded-xl flex items-center justify-center" style="background:hsl(39 74% 54% / 0.1)"><span class="text-primary text-2xl">👑</span></div>
+              <h4 class="text-xl md:text-2xl font-black text-primary">REINAR</h4>
+              <p class="text-sm md:text-base text-foreground/80 leading-relaxed">Assuma o controle da sua vida com clareza, coragem e estratégia.</p>
+            </div>
+          </div>
+          <div class="group relative p-6 md:p-8 bg-card border border-border rounded-2xl animate-fade-in" style="animation-delay:0.55s">
+            <div class="space-y-3 md:space-y-4">
+              <div class="w-12 h-12 md:w-16 md:h-16 rounded-xl flex items-center justify-center" style="background:hsl(39 74% 54% / 0.1)"><span class="text-primary text-2xl">📈</span></div>
+              <h4 class="text-xl md:text-2xl font-black text-primary">ENRIQUECER</h4>
+              <p class="text-sm md:text-base text-foreground/80 leading-relaxed">Rompa com padrões de escassez, gere novas fontes de renda e construa riqueza com inteligência e propósito.</p>
+            </div>
+          </div>
+          <div class="group relative p-6 md:p-8 bg-card border border-border rounded-2xl animate-fade-in sm:col-span-2 lg:col-span-1" style="animation-delay:0.7s">
+            <div class="space-y-3 md:space-y-4">
+              <div class="w-12 h-12 md:w-16 md:h-16 rounded-xl flex items-center justify-center" style="background:hsl(39 74% 54% / 0.1)"><span class="text-primary text-2xl">🧠</span></div>
+              <h4 class="text-xl md:text-2xl font-black text-primary">IDENTIDADE</h4>
+              <p class="text-sm md:text-base text-foreground/80 leading-relaxed">Fortaleça quem você é. Desative sabotagens internas e instale sua versão mais poderosa e confiante.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WEALTH ===================== -->
+<section class="py-12 md:py-16 lg:py-24 bg-card overflow-hidden">
+  <div class="container mx-auto px-4">
+    <div style="max-width:64rem;margin:0 auto;" class="space-y-8 md:space-y-12">
+      <div class="text-center space-y-4 md:space-y-6 animate-fade-in">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black px-4">
+          <span class="text-primary">ENRIQUECER</span> <span class="text-foreground">É UMA QUESTÃO DE</span> <span class="text-primary">IDENTIDADE</span>
+        </h2>
+        <div class="space-y-3 md:space-y-4 text-base md:text-lg text-foreground/80 px-4" style="max-width:48rem;margin:0 auto;">
+          <p class="font-semibold">Você não precisa de mais um curso.</p>
+          <p>Você precisa de clareza sobre quem você é, pra finalmente saber como multiplicar o que tem — com foco, paz e consistência.</p>
+        </div>
+      </div>
+      <div class="space-y-4 md:space-y-6">
+        <h3 class="text-xl md:text-2xl font-bold text-center text-foreground mb-6 md:mb-8 px-4 animate-fade-in" style="animation-delay:0.2s">No Método REI, você vai:</h3>
+        <div class="grid gap-3 md:gap-4">
+          <div class="flex items-start gap-3 md:gap-4 p-4 md:p-6 bg-background border border-border rounded-xl animate-fade-in" style="animation-delay:0.3s"><div class="flex-shrink-0 w-6 h-6 md:w-8 md:h-8 rounded-full flex items-center justify-center" style="background:hsl(39 74% 54% / 0.2)"><span class="text-primary font-bold text-sm md:text-base">✓</span></div><p class="text-foreground/90 text-sm md:text-lg">Romper padrões de escassez e travas invisíveis</p></div>
+          <div class="flex items-start gap-3 md:gap-4 p-4 md:p-6 bg-background border border-border rounded-xl animate-fade-in" style="animation-delay:0.4s"><div class="flex-shrink-0 w-6 h-6 md:w-8 md:h-8 rounded-full flex items-center justify-center" style="background:hsl(39 74% 54% / 0.2)"><span class="text-primary font-bold text-sm md:text-base">✓</span></div><p class="text-foreground/90 text-sm md:text-lg">Desenvolver uma mentalidade rica, prática e produtiva</p></div>
+          <div class="flex items-start gap-3 md:gap-4 p-4 md:p-6 bg-background border border-border rounded-xl animate-fade-in" style="animation-delay:0.5s"><div class="flex-shrink-0 w-6 h-6 md:w-8 md:h-8 rounded-full flex items-center justify-center" style="background:hsl(39 74% 54% / 0.2)"><span class="text-primary font-bold text-sm md:text-base">✓</span></div><p class="text-foreground/90 text-sm md:text-lg">Ativar novas fontes de renda, mesmo começando do zero</p></div>
+          <div class="flex items-start gap-3 md:gap-4 p-4 md:p-6 bg-background border border-border rounded-xl animate-fade-in" style="animation-delay:0.6s"><div class="flex-shrink-0 w-6 h-6 md:w-8 md:h-8 rounded-full flex items-center justify-center" style="background:hsl(39 74% 54% / 0.2)"><span class="text-primary font-bold text-sm md:text-base">✓</span></div><p class="text-foreground/90 text-sm md:text-lg">Organizar sua vida financeira com clareza e leveza</p></div>
+          <div class="flex items-start gap-3 md:gap-4 p-4 md:p-6 bg-background border border-border rounded-xl animate-fade-in" style="animation-delay:0.7s"><div class="flex-shrink-0 w-6 h-6 md:w-8 md:h-8 rounded-full flex items-center justify-center" style="background:hsl(39 74% 54% / 0.2)"><span class="text-primary font-bold text-sm md:text-base">✓</span></div><p class="text-foreground/90 text-sm md:text-lg">Multiplicar o que você já tem — com estratégia e direção</p></div>
+        </div>
+      </div>
+      <div class="text-center space-y-3 md:space-y-4 pt-4 md:pt-8 animate-fade-in" style="animation-delay:0.9s">
+        <div class="inline-block px-4 md:px-8 py-4 md:py-6 rounded-2xl mx-4" style="background:hsl(39 74% 54% / 0.1);border:2px solid hsl(39 74% 54% / 0.3);">
+          <p class="text-base md:text-xl font-bold text-foreground mb-2">💡 Riqueza sem identidade gera escravidão.</p>
+          <p class="text-base md:text-xl font-bold text-primary">Riqueza com identidade gera governo, legado e paz.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HOW IT WORKS ===================== -->
+<section class="py-12 md:py-16 lg:py-24 bg-parallax overflow-hidden relative" style="background-image:url('https://metodorei.lovable.app/assets/parallax-bg-Co8qz2R7.jpg')">
+  <div class="absolute inset-0" style="background:hsl(0 0% 4% / 0.8);pointer-events:none;"></div>
+  <div class="container mx-auto px-4 relative z-10">
+    <div style="max-width:72rem;margin:0 auto;" class="space-y-10 md:space-y-16">
+      <div class="text-center space-y-4 animate-fade-in">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black px-4">
+          <span class="text-primary">COMO </span><span class="text-foreground">FUNCIONA</span>
+        </h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div class="space-y-4 md:space-y-6 p-6 md:p-8 bg-card border-2 rounded-2xl animate-fade-in" style="border-color:hsl(0 84% 60% / 0.3);animation-delay:0.2s">
+          <div class="flex items-center gap-3"><span class="text-3xl">⚔️</span><div><h3 class="text-xl md:text-2xl font-black" style="color:hsl(0 84% 60%)">DIA 1</h3><p class="text-xs md:text-sm text-foreground/60 uppercase tracking-wider">A Limpeza</p></div></div>
+          <p class="text-sm md:text-base text-foreground/90 leading-relaxed">Elimine bloqueios mentais e emocionais que travam sua prosperidade.<br /><br /><span class="text-foreground/70">Traumas, medo, culpa, confusão — tudo é confrontado e tratado.</span></p>
+        </div>
+        <div class="space-y-4 md:space-y-6 p-6 md:p-8 bg-card border-2 rounded-2xl animate-fade-in" style="border-color:hsl(39 74% 54% / 0.5);animation-delay:0.35s">
+          <div class="flex items-center gap-3"><span class="text-3xl">🏗️</span><div><h3 class="text-xl md:text-2xl font-black text-primary">DIA 2</h3><p class="text-xs md:text-sm text-foreground/60 uppercase tracking-wider">A Reconstrução</p></div></div>
+          <p class="text-sm md:text-base text-foreground/90 leading-relaxed">Você ativa sua nova identidade com visão clara, mente leve e postura de reinante.<br /><br /><span class="text-foreground/70">Você sai pronto pra aplicar tudo na vida real.</span></p>
+        </div>
+        <div class="space-y-4 md:space-y-6 p-6 md:p-8 bg-card border-2 rounded-2xl sm:col-span-2 lg:col-span-1 animate-fade-in" style="border-color:hsl(45 90% 60% / 0.5);animation-delay:0.5s">
+          <div class="flex items-center gap-3"><span class="text-3xl">🚀</span><div><h3 class="text-xl md:text-2xl font-black text-accent">JORNADA PÓS-REI</h3><p class="text-xs md:text-sm text-foreground/60 uppercase tracking-wider">A Consolidação</p></div></div>
+          <p class="text-sm md:text-base text-foreground/90 leading-relaxed">12 dias online com práticas e desafios práticos para implementar em:<br /><br /><span class="text-xs md:text-sm text-foreground/70">Finanças | Casamento | Saúde<br />Filhos | Negócios | Mentalidade<br />Planejamento | Liderança | Impacto<br />Produtividade | Vida Plena | Autonomia</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="py-12 md:py-16 lg:py-24 bg-light-section overflow-hidden">
+  <div class="container mx-auto px-4">
+    <div style="max-width:80rem;margin:0 auto;" class="space-y-10 md:space-y-16">
+      <div class="text-center space-y-4 animate-fade-in">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black px-4">
+          <span class="text-primary">DEPOIMENTOS</span> <span class="text-foreground">DE TRANSFORMAÇÃO REAL</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+        <div class="bg-background border border-border rounded-xl sm:rounded-2xl overflow-hidden animate-fade-in" style="animation-delay:0.1s"><div style="position:relative;padding-bottom:56.25%;height:0;"><iframe src="https://www.youtube.com/embed/h971z5tomTU" title="Depoimento 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" loading="lazy"></iframe></div></div>
+        <div class="bg-background border border-border rounded-xl sm:rounded-2xl overflow-hidden animate-fade-in" style="animation-delay:0.2s"><div style="position:relative;padding-bottom:56.25%;height:0;"><iframe src="https://www.youtube.com/embed/gBFK00ATjRg" title="Depoimento 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" loading="lazy"></iframe></div></div>
+        <div class="bg-background border border-border rounded-xl sm:rounded-2xl overflow-hidden animate-fade-in" style="animation-delay:0.3s"><div style="position:relative;padding-bottom:56.25%;height:0;"><iframe src="https://www.youtube.com/embed/xiZ9QJW-xho" title="Depoimento 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" loading="lazy"></iframe></div></div>
+        <div class="bg-background border border-border rounded-xl sm:rounded-2xl overflow-hidden animate-fade-in" style="animation-delay:0.4s"><div style="position:relative;padding-bottom:56.25%;height:0;"><iframe src="https://www.youtube.com/embed/Svwl3Ccq6Hc" title="Depoimento 4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" loading="lazy"></iframe></div></div>
+        <div class="bg-background border border-border rounded-xl sm:rounded-2xl overflow-hidden animate-fade-in" style="animation-delay:0.5s"><div style="position:relative;padding-bottom:56.25%;height:0;"><iframe src="https://www.youtube.com/embed/2E-B5ni8LWs" title="Depoimento 5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" loading="lazy"></iframe></div></div>
+        <div class="bg-background border border-border rounded-xl sm:rounded-2xl overflow-hidden animate-fade-in" style="animation-delay:0.6s"><div style="position:relative;padding-bottom:56.25%;height:0;"><iframe src="https://www.youtube.com/embed/DxlKVJ1qphQ" title="Depoimento 6" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" loading="lazy"></iframe></div></div>
+        <div class="bg-background border border-border rounded-xl sm:rounded-2xl overflow-hidden animate-fade-in" style="animation-delay:0.7s"><div style="position:relative;padding-bottom:56.25%;height:0;"><iframe src="https://www.youtube.com/embed/ghlQf-IKqqs" title="Depoimento 7" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" loading="lazy"></iframe></div></div>
+        <div class="bg-background border border-border rounded-xl sm:rounded-2xl overflow-hidden animate-fade-in" style="animation-delay:0.8s"><div style="position:relative;padding-bottom:56.25%;height:0;"><iframe src="https://www.youtube.com/embed/2km4pyYiIKU" title="Depoimento 8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" loading="lazy"></iframe></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SPEAKERS ===================== -->
+<section class="py-12 md:py-16 lg:py-24 bg-parallax overflow-hidden relative" style="background-image:url('https://metodorei.lovable.app/assets/parallax-bg-Co8qz2R7.jpg')">
+  <div class="absolute inset-0" style="background:hsl(0 0% 4% / 0.8);pointer-events:none;"></div>
+  <div class="container mx-auto px-4 relative z-10">
+    <div style="max-width:80rem;margin:0 auto;" class="space-y-12 md:space-y-16">
+      <div class="text-center space-y-4 animate-fade-in">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black px-4">
+          <span class="text-primary">QUEM CONDUZ</span> <span class="text-foreground">SUA TRANSFORMAÇÃO</span>
+        </h2>
+      </div>
+      <div class="space-y-16 md:space-y-24">
+        <!-- DJ Belieny -->
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center rounded-3xl overflow-hidden p-6 md:p-12 animate-fade-in" style="background:hsl(0 0% 8% / 0.3);animation-delay:0.2s">
+          <div class="space-y-6 md:space-y-8 order-2 lg:order-1">
+            <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight"><span class="text-foreground">DJ</span><br /><span class="text-muted-foreground">Belieny</span></h3>
+            <div class="space-y-4 md:space-y-5 text-foreground/80 leading-relaxed text-sm md:text-base">
+              <p>Estrategista de negócios e especialista em <span class="text-primary font-bold">implementação de inteligência artificial</span>, com habilidade para transformar desafios complexos em estratégias simples e acionáveis.</p>
+              <p>Antes de se destacar no mundo dos negócios e da IA, <span class="text-foreground font-bold">DJ trabalhou nas Nações Unidas</span>, colaborando em iniciativas voltadas para o desenvolvimento global.</p>
+              <p class="text-foreground font-medium">Hoje, DJ combina sua visão global com profundo conhecimento em aceleração de vendas e inovação orientada por IA.</p>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+            <img src="https://metodorei.lovable.app/assets/Dj-BchBH0xD.png" alt="DJ Belieny" class="w-full max-w-md lg:max-w-lg h-auto object-cover rounded-2xl" style="background:#000" />
+          </div>
+        </div>
+
+        <!-- Dr. Santiago Vecina -->
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center rounded-3xl overflow-hidden p-6 md:p-12 animate-fade-in" style="background:hsl(0 0% 8% / 0.3);animation-delay:0.4s">
+          <div class="space-y-6 md:space-y-8 order-2 lg:order-1">
+            <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight"><span class="text-foreground">Dr. Santiago</span><br /><span class="text-muted-foreground">Vecina</span></h3>
+            <div class="space-y-4 md:space-y-5 text-foreground/80 leading-relaxed text-sm md:text-base">
+              <p>Médico, empresário, triatleta e palestrante internacional, Santiago Vecina é especialista em nutrologia esportiva e otimização da saúde.</p>
+              <p>Triatleta e criador do método SAAMS, Santiago ajuda pessoas a perder até <span class="text-primary font-bold">20 kg em dois meses</span> e a conquistar feitos como completar o Ironman.</p>
+              <p class="text-foreground font-medium">Autor do livro <em>"Médico do Corpo e da Alma"</em>, ele inspira uma nova forma de viver.</p>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+            <img src="https://metodorei.lovable.app/assets/santiago-vecina-DJfDOjwC.png" alt="Dr. Santiago Vecina" class="w-full max-w-md lg:max-w-lg h-auto object-cover rounded-2xl" />
+          </div>
+        </div>
+
+        <!-- Pablo Marçal -->
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center rounded-3xl overflow-hidden p-6 md:p-12 animate-fade-in" style="background:hsl(0 0% 8% / 0.3);animation-delay:0.6s">
+          <div class="space-y-6 md:space-y-8 order-2 lg:order-1">
+            <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight"><span class="text-foreground">Pablo</span><br /><span class="text-muted-foreground">Marçal</span></h3>
+            <div class="space-y-4 md:space-y-5 text-foreground/80 leading-relaxed text-sm md:text-base">
+              <p>Cristão, casado com Carol Marçal, pai do Lorenzo, Benjamin, Miguel e Isabela. Aos 36 anos, se tornou um dos <span class="text-primary font-bold">patriarcas mais prósperos do Brasil</span>.</p>
+              <p>Nas redes sociais é assistido por mais de <span class="text-primary font-bold">20 milhões de pessoas por mês</span>.</p>
+              <p>Multiempreendedor, mentor, escritor, piloto de corrida e investidor. Lidera como CVO um grupo multibilionário.</p>
+              <p class="text-foreground font-medium">Seu propósito é ativar a identidade e clarificar o propósito das pessoas que se conectem a ele.</p>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+            <img src="https://metodorei.lovable.app/assets/pablo-marcal-B11x6U3l.png" alt="Pablo Marçal" class="w-full max-w-md lg:max-w-lg h-auto object-cover rounded-2xl" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="py-12 md:py-16 lg:py-24 bg-light-section overflow-hidden">
+  <div class="container mx-auto px-4">
+    <div style="max-width:56rem;margin:0 auto;" class="space-y-8 md:space-y-12">
+      <div class="text-center space-y-4 animate-fade-in">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black px-4">
+          <span class="text-primary">PERGUNTAS</span> <span class="text-foreground">FREQUENTES</span>
+        </h2>
+      </div>
+      <div class="space-y-3 md:space-y-4">
+        <details class="bg-background border border-border rounded-xl px-4 md:px-6 animate-fade-in" style="animation-delay:0.2s">
+          <summary class="text-sm md:text-lg font-semibold text-left py-4 text-foreground">Preciso ter experiência prévia?</summary>
+          <div class="faq-answer text-sm md:text-base text-foreground/80 leading-relaxed pb-4">Não. O Método REI é pra quem está disposto a mergulhar de verdade na própria virada.</div>
+        </details>
+        <details class="bg-background border border-border rounded-xl px-4 md:px-6 animate-fade-in" style="animation-delay:0.3s">
+          <summary class="text-sm md:text-lg font-semibold text-left py-4 text-foreground">Funciona para qualquer idade?</summary>
+          <div class="faq-answer text-sm md:text-base text-foreground/80 leading-relaxed pb-4">Sim. Temos participantes entre 18 e 65+, de todas as áreas.</div>
+        </details>
+        <details class="bg-background border border-border rounded-xl px-4 md:px-6 animate-fade-in" style="animation-delay:0.4s">
+          <summary class="text-sm md:text-lg font-semibold text-left py-4 text-foreground">Tem foco espiritual?</summary>
+          <div class="faq-answer text-sm md:text-base text-foreground/80 leading-relaxed pb-4">Sim. A reconexão com valores e princípios está presente em todo o processo.</div>
+        </details>
+        <details class="bg-background border border-border rounded-xl px-4 md:px-6 animate-fade-in" style="animation-delay:0.5s">
+          <summary class="text-sm md:text-lg font-semibold text-left py-4 text-foreground">E o lado financeiro?</summary>
+          <div class="faq-answer text-sm md:text-base text-foreground/80 leading-relaxed pb-4">Você será guiado por quem vive o que ensina — ensinando como criar fontes de renda com inteligência, direção e valores.</div>
+        </details>
+        <details class="bg-background border border-border rounded-xl px-4 md:px-6 animate-fade-in" style="animation-delay:0.6s">
+          <summary class="text-sm md:text-lg font-semibold text-left py-4 text-foreground">Posso ir com meu cônjuge?</summary>
+          <div class="faq-answer text-sm md:text-base text-foreground/80 leading-relaxed pb-4">Sim. Temos um desconto especial de 50% no segundo ingresso.</div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EVENT DETAILS ===================== -->
+<section id="inscricao" class="py-12 md:py-16 lg:py-24 bg-background overflow-hidden">
+  <div class="container mx-auto px-4">
+    <div style="max-width:64rem;margin:0 auto;" class="space-y-10 md:space-y-16">
+      <!-- Last Call -->
+      <div class="text-center space-y-4 md:space-y-6 p-6 md:p-12 rounded-2xl md:rounded-3xl animate-fade-in" style="background:hsl(0 84% 60% / 0.05);border:2px solid hsl(0 84% 60% / 0.3);">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black px-4"><span style="color:hsl(0 84% 60%)">ÚLTIMA</span> <span class="text-foreground">CHAMADA</span></h2>
+        <div class="space-y-3 md:space-y-4 px-4" style="max-width:48rem;margin:0 auto;">
+          <p class="text-base md:text-xl text-foreground/90 font-semibold">Essa é sua chance real de fazer diferente ainda em 2025.</p>
+          <p class="text-sm md:text-lg text-foreground/80">As vagas são limitadas e o evento é 100% presencial.<br />Não vai ter replay. Não tem segunda chamada.</p>
+          <p class="text-base md:text-xl font-bold text-foreground pt-2 md:pt-4">Você pode continuar como está...<br /><span class="text-primary">Ou dar o passo que muda tudo.</span></p>
+        </div>
+      </div>
+
+      <!-- Details -->
+      <div class="space-y-6 md:space-y-8">
+        <div class="text-center animate-fade-in" style="animation-delay:0.2s">
+          <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black px-4"><span class="text-primary">DETALHES</span> <span class="text-foreground">DO EVENTO</span></h3>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          <div class="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card border border-border rounded-xl animate-fade-in" style="animation-delay:0.3s">
+            <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background:hsl(39 74% 54% / 0.1)"><span class="text-primary text-xl">📍</span></div>
+            <div><p class="text-xs md:text-sm text-foreground/60 font-medium">Local</p><a class="font-bold text-primary" href="https://maps.app.goo.gl/zXaKbPqu81wcArm26">Google Maps</a></div>
+          </div>
+          <div class="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card border border-border rounded-xl animate-fade-in" style="animation-delay:0.4s">
+            <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background:hsl(39 74% 54% / 0.1)"><span class="text-primary text-xl">📅</span></div>
+            <div><p class="text-xs md:text-sm text-foreground/60 font-medium">Data</p><p class="text-sm md:text-lg font-bold text-foreground">22 e 23 de Novembro</p></div>
+          </div>
+          <div class="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card border border-border rounded-xl animate-fade-in" style="animation-delay:0.5s">
+            <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background:hsl(39 74% 54% / 0.1)"><span class="text-primary text-xl">🕐</span></div>
+            <div><p class="text-xs md:text-sm text-foreground/60 font-medium">Horário</p><p class="text-sm md:text-lg font-bold text-foreground">9h às 19h</p></div>
+          </div>
+        </div>
+
+        <!-- Includes -->
+        <div class="p-6 md:p-8 bg-card border border-border rounded-2xl space-y-4 md:space-y-6 animate-fade-in" style="animation-delay:0.6s">
+          <div class="flex items-center gap-3"><span class="text-2xl">🎁</span><h4 class="text-xl md:text-2xl font-black text-foreground">Inclui:</h4></div>
+          <div class="space-y-2 md:space-y-3">
+            <div class="flex items-start gap-2 md:gap-3"><span class="text-primary text-lg md:text-xl">✓</span><span class="text-foreground/90 text-sm md:text-lg">Imersão presencial de 2 dias</span></div>
+            <div class="flex items-start gap-2 md:gap-3"><span class="text-primary text-lg md:text-xl">✓</span><span class="text-foreground/90 text-sm md:text-lg">Acesso à Jornada Pós-Rei (12 dias guiados)</span></div>
+            <div class="flex items-start gap-2 md:gap-3"><span class="text-primary text-lg md:text-xl">✓</span><span class="text-foreground/90 text-sm md:text-lg">Comunidade exclusiva</span></div>
+          </div>
+        </div>
+
+        <!-- Payment -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          <div class="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card rounded-xl animate-fade-in" style="border:1px solid hsl(39 74% 54% / 0.3);animation-delay:0.7s"><span class="text-2xl flex-shrink-0">💳</span><p class="text-foreground/90 font-semibold text-sm md:text-base">Parcelamento disponível</p></div>
+          <div class="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card rounded-xl animate-fade-in" style="border:1px solid hsl(39 74% 54% / 0.3);animation-delay:0.8s"><span class="text-2xl flex-shrink-0">👫</span><p class="text-foreground/90 font-semibold text-sm md:text-base">Desconto especial para casais</p></div>
+          <div class="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-card rounded-xl sm:col-span-2 lg:col-span-1 animate-fade-in" style="border:1px solid hsl(0 84% 60% / 0.3);animation-delay:0.9s"><span class="text-2xl flex-shrink-0">🚫</span><p class="text-foreground/90 font-semibold text-sm md:text-base">Vagas limitadas</p></div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center space-y-4 md:space-y-6 pt-6 md:pt-8 animate-fade-in" style="animation-delay:1s">
+        <a href="https://metodorei.com/form-jackson-viler" class="btn-hero" style="padding:1.5rem 4rem;font-size:1.25rem;">INSCREVER-SE AGORA</a>
+        <p class="text-foreground/60 text-xs md:text-sm px-4" style="margin-top:1rem;">Clique no botão acima para garantir sua vaga</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="py-8 md:py-12 bg-card border-t border-border overflow-hidden">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col items-center gap-4 md:gap-6 text-center animate-fade-in">
+      <img src="https://metodorei.lovable.app/assets/metodo-rei-logo-DZXdGaBm.png" alt="Método REI" class="h-10 md:h-12 w-auto mx-auto" />
+      <p class="text-sm md:text-base text-foreground/60 px-4" style="max-width:42rem;">Desbloqueie Sua Identidade. Ative Sua Riqueza. Reine na Vida.</p>
+      <div class="text-xs md:text-sm text-foreground/40"><p>© 2025 Método REI. Todos os direitos reservados.</p></div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll reveal script -->
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('show'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
